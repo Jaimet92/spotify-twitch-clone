@@ -1,4 +1,6 @@
 {
+  "name": "spotify-twitch-clone",
+  "version": "0.0.1",
   "dependencies": {
     "@astrojs/react": "3.0.2",
     "@astrojs/svelte": "4.0.2",
@@ -17,14 +19,16 @@
     "vue": "^3.2.30",
     "zustand": "^4.4.3"
   },
-  "name": "spotify-twitch-clone",
   "scripts": {
     "astro": "astro",
-    "build": "astro build",
+    "build": "bun run test && astro build",
     "dev": "astro dev",
     "preview": "astro preview",
-    "start": "astro dev"
+    "start": "astro dev",
+    "test": "bun test"
   },
   "type": "module",
-  "version": "0.0.1"
+  "devDependencies": {
+    "bun-types": "^1.0.0"
+  }
 }
